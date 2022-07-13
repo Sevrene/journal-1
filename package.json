@@ -2,7 +2,7 @@
   "name": "journal-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sevrene.github.io",
+  "homepage": "https://sevrene.github.io/journal-1/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
