@@ -7,10 +7,13 @@ import Collapse from '@mui/material/Collapse';
 function Section({text, content}) {
     const [show, setShow] = useState(false);
     return (
-        <>
-        	<Button disabled={show} variant="outlined" onClick={() => setShow(prev => !prev)}>{text}</Button>
+        <div class="section">
+        	<Button sx={{
+				width: 20,
+			}}
+				disabled={show} variant="outlined" onClick={() => setShow(prev => !prev)}>{text}</Button>
             <Collapse in={show}>{content}</Collapse>
-        </>
+        </div>
 	);
 }
 
