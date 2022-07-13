@@ -1,21 +1,25 @@
 import './App.css';
 
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import React, { useState } from 'react';
+import Button from '@mui/material/Button';
+import Collapse from '@mui/material/Collapse';
+
+const Component = () => {
+  const [show, setShow] = useState(false);
+  return(
+    <>
+      <button onClick={() => setShow(prev => !prev)}>Click</button>
+      {show && <Box>This is your component</Box>}
+    </>
+  );
+}
 
 function App() {
+  const [show, setShow] = useState(false);
   return (
-    <Box
-      sx={{
-        width: 300,
-        height: 300,
-        backgroundColor: 'primary.dark',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
-      }}
-    />
+    <><Button variant="outlined" onClick={() => setShow(prev => !prev)}>Test</Button><Collapse in={show}>
+      <Button variant="outlined" onClick={() => setShow(prev => !prev)}>Test</Button>
+    </Collapse></>
   );
 }
 
