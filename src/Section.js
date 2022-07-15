@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Collapse from '@mui/material/Collapse';
-import { Divider, SliderMarkLabel } from '@mui/material';
+import { Divider } from '@mui/material';
 import { Box } from '@mui/system';
 
 const darkTheme = createTheme({
