@@ -1,1 +1,1 @@
-KHS 131 Journal 1 Project
+KHS 131 Journal 2 Project
